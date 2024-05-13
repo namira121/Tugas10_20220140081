@@ -1,0 +1,134 @@
+*{
+    padding:0;
+    top: 0;
+    right: 0;
+}
+
+:root{
+    --color-primary: rgba(0, 217, 255, 0.79);
+    --color-white: white;
+    --color-black: black;
+    --color-black-1: rgb(35, 29, 29);
+}
+
+h1{
+    text-align: center;
+    margin: 10px;
+}
+
+h2{
+    text-align: center;
+    margin: 10px;
+}
+
+p{
+    text-align: center;
+    margin: 10px;
+    font-size: 18px;
+}
+
+body{
+    font-family: sans-serif;
+    text-align: justify;
+    background-color: rgb(194, 212, 244);
+}
+.menu_bar{
+    background-color: var(--color-black);
+    height: 80px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5%;
+}
+
+.Logo{
+    color: var(--color-white);
+    font-size: 30 px;
+}
+
+.Logo span{
+    color:var(--color-primary);
+}
+
+.menu_bar ul{
+    list-style: none;
+    display: flex;
+}
+
+.menu_bar ul li {
+    padding: 10px 30px;
+    position: relative;
+}
+
+.menu_bar ul li a {
+    color: var(--color-white);
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.menu_bar ul li a:hover {
+    color:var(--color-primary);
+}
+
+.dropdown_menu{
+    display: none;
+}
+
+.menu_bar ul li:hover .dropdown_menu{
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background-color: var(--color-black);
+}
+
+.dropdown_menu ul {
+    display: block;
+    margin: 10px;
+}
+
+.dropdown_menu ul li{
+    width: 150px;
+    padding: 10px;
+}
+
+.fas {
+    float:right;
+    margin-left: 10px;
+    margin-top: 3px;
+}
+
+
+
+section{
+    text-align: center;
+    align-items: center;
+    border: solid black;
+    box-sizing: border-box;
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+}
+
+.btr{
+    justify-content: content;
+    text-align: center;
+}
+
+.button {
+    display: block;
+    margin: 0 auto; 
+    padding: 10px 20px;
+    background-color: white; 
+    color: white; 
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.button:hover {
+    background-color: lightgreen; 
+}
+
